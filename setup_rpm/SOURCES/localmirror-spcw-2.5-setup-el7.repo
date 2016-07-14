@@ -1,0 +1,5 @@
+[MIRRORSHORTNAME-spcw-2.5-setup-el7]
+name=MIRRORPROPERNAME Spacewalk 2.5 Setup for Enterprise Linux 7 - $basearch
+baseurl=http://MIRRORHOSTNAME/mirrors/spcw-setup/2.5/el7/$basearch
+enabled=1
+gpgcheck=0

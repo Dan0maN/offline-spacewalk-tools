@@ -1,0 +1,5 @@
+[AREASHORTNAME-spcw-2.5-setup-el7]
+name=AREAPROPERNAME Spacewalk 2.5 Setup for Enterprise Linux 7 - $basearch
+baseurl=http://AREAHOSTNAME/pub/spcw-setup/2.5/el7/$basearch
+enabled=1
+gpgcheck=0
