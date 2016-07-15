@@ -1,0 +1,20 @@
+#	field		allowed values
+#	-----		--------------
+#	minute		0-59
+#	hour		0-23
+#	day of month	1-31
+#	month		1-12 (or names, see below)
+#	day of week	0-7 (0 or 7 is Sunday, or use names)
+
+# CEFS
+02 3 * * * root /var/localmirror/bin/curl-errata-latest.xml.sh --silent
+# CentOS
+12 3 * * * root /var/localmirror/bin/rsync-centos-7-full.sh --quiet
+14 */6 * * * root /var/localmirror/bin/rsync-centos-7-updates.sh --quiet
+# EPEL
+22 3 * * * root /var/localmirror/bin/rsync-epel-7-select.sh --quiet
+# Jpackage
+32 3 * * * root /var/localmirror/bin/lftp-jpackage.sh
+# Spacewalk
+42 3 * * * root /var/localmirror/bin/lftp-spacewalk-2.5.sh
+42 3 * * * root /var/localmirror/bin/lftp-spacewalk-2.5-client.sh
